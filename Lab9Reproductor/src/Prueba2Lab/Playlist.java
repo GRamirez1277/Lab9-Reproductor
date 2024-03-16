@@ -96,4 +96,11 @@ public class Playlist {
         }
         return false;
     }
+    
+    public Canciones siguienteCancion(Canciones actual) {
+        if (actual != null && actual.siguiente != null) {
+            return actual.siguiente;
+        }
+        return null;
+    }
 }
